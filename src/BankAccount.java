@@ -2,17 +2,21 @@ import com.sun.jdi.connect.Connector;
 
 public class BankAccount {
     //instance fields
-    String name;
+    String firstName;
+    String lastName;
     double balance;
     int yearsOpen;
 
     //constructor method
-    public BankAccount(String accountOwner, double accountBalance, int accountYears ) {
-        name = accountOwner;
+    public BankAccount(String firstNameOwner, String lastNameOwner, double accountBalance, int accountYears ) {
+        firstName = firstNameOwner;
+        lastName = lastNameOwner;
         balance = accountBalance;
         yearsOpen = accountYears;
     }
+    public void checkBalance() {
 
+    }
     // Show balance
     // Deposit Money
     // Withdraw Money
@@ -21,7 +25,7 @@ public class BankAccount {
 
     public static void main(String[] Args) {
         System.out.println("Does this work?");
-        BankAccount PNC = new BankAccount("Christopher Jin", 200000.00, 10);
-        System.out.println(PNC.name);
+        BankAccount PNC = new BankAccount("Christopher","Jin", 200000.00, 10);
+        System.out.println("The owner of the PNC Bank account is named: " + PNC.firstName + " " + PNC.lastName);
     }
 }
