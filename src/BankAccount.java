@@ -19,13 +19,20 @@ public class BankAccount {
         System.out.println("There is currently $" + balance + " in your PNC Bank Account");
     }
     // Deposit Money
+    public void depositMoney( double depositAmount) {
+        //double updatedBalance = balance + depositAmount;
+        //balance = updatedBalance;
+        balance += depositAmount;
+        System.out.println("Your updated balance is now $" + balance + ".");
+    }
     // Withdraw Money
 
 
 
     public static void main(String[] Args) {
-        System.out.println("Does this work?");
-        BankAccount PNC = new BankAccount("Christopher","Jin", 200000.00, 10);
-        PNC.checkBalance();
+        //System.out.println("Does this work?");
+        BankAccount savingsAccount = new BankAccount("John", "Smith", 1000,1);
+        savingsAccount.checkBalance();
+        savingsAccount.depositMoney(1000.99);
     }
 }
