@@ -14,6 +14,10 @@ public class BankAccount {
         balance = accountBalance;
         yearsOpen = accountYears;
     }
+    // withdraw limit
+    public int withdrawLimit (int withdrawAmount) {
+        return withdrawAmount;
+    }
     public void checkBalance() {
         // Show balance
         System.out.println("There is currently $" + balance + " in your PNC Bank Account");
@@ -34,5 +38,6 @@ public class BankAccount {
         BankAccount savingsAccount = new BankAccount("John", "Smith", 1000,1);
         savingsAccount.checkBalance();
         savingsAccount.depositMoney(1000.99);
+        System.out.println(savingsAccount.withdrawLimit(3000));
     }
 }
