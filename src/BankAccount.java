@@ -30,8 +30,14 @@ public class BankAccount {
         System.out.println("Your updated balance is now $" + balance + ".");
     }
     // Withdraw Money
-
-
+    public void withdrawMoney(double withdrawAmount) {
+        balance -= withdrawAmount;
+        System.out.println("Your updated balance is now $" + balance + ".");
+    }
+    //Returning a string
+    public String toString() {
+        return "My name is " + firstName + ", my bank account has a balance of " + balance + ".";
+    }
 
     public static void main(String[] Args) {
         //System.out.println("Does this work?");
@@ -39,5 +45,6 @@ public class BankAccount {
         savingsAccount.checkBalance();
         savingsAccount.depositMoney(1000.99);
         System.out.println(savingsAccount.withdrawLimit(3000));
+        System.out.println(savingsAccount); // Prints out the toString method
     }
 }
