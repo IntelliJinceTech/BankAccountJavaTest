@@ -46,5 +46,6 @@ public class BankAccount {
         savingsAccount.depositMoney(1000.99);
         System.out.println(savingsAccount.withdrawLimit(3000));
         System.out.println(savingsAccount); // Prints out the toString method
+        savingsAccount.toString();
     }
 }
