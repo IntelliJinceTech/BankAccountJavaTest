@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class BankAccount2 {
     String firstName;
     String lastName;
@@ -18,7 +19,10 @@ public class BankAccount2 {
     public void checkAccountAge() {
         System.out.println("Your account is " + age + " years old.");
     }
-
+    public int[] accountDetails() {
+        int[] accountIDs = {500,200};
+        return accountIDs;
+    }
 
     public static void main(String[] args) {
         BankAccount2 capitalOneAccount = new BankAccount2("Chris", "Jin", 100000, 5);
