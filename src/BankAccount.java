@@ -11,12 +11,15 @@ public class BankAccount {
 
 
     //constructor method
-    public BankAccount(String firstNameOwner, String lastNameOwner, double accountBalance, int accountYears, String properName) {
+    public BankAccount(String firstNameOwner, String lastNameOwner, double accountBalance, int accountYears, String properName, String inputID) {
         firstName = firstNameOwner;
         lastName = lastNameOwner;
         balance = accountBalance;
         yearsOpen = accountYears;
         name = properName;
+        id = inputID;
+
+
     }
     // withdraw limit
     public int withdrawLimit (int withdrawAmount) {

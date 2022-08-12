@@ -3,7 +3,8 @@ public class Bank {
     private CheckingAccount bankOfAmericaStandardChecking;
 
     public Bank() {
-        chaseChecking = new BankAccount()
+        chaseChecking = new BankAccount("Chef", "Gordon", 10123.23, 2,"360 Savings","abc123" );
+
     }
 
 }
