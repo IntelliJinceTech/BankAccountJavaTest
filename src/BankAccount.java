@@ -4,15 +4,19 @@ public class BankAccount {
     //instance fields
     String firstName;
     String lastName;
-    double balance;
+    private double balance;
     int yearsOpen;
+    private String name;
+    private String id;
+
 
     //constructor method
-    public BankAccount(String firstNameOwner, String lastNameOwner, double accountBalance, int accountYears ) {
+    public BankAccount(String firstNameOwner, String lastNameOwner, double accountBalance, int accountYears, String properName) {
         firstName = firstNameOwner;
         lastName = lastNameOwner;
         balance = accountBalance;
         yearsOpen = accountYears;
+        name = properName;
     }
     // withdraw limit
     public int withdrawLimit (int withdrawAmount) {
@@ -41,11 +45,12 @@ public class BankAccount {
 
     public static void main(String[] Args) {
         //System.out.println("Does this work?");
-        BankAccount savingsAccount = new BankAccount("John", "Smith", 1000,1);
+        BankAccount savingsAccount = new BankAccount("John", "Smith", 1000,1,"CapitalOne360Savings");
         savingsAccount.checkBalance();
         savingsAccount.depositMoney(1000.99);
-        System.out.println(savingsAccount.withdrawLimit(3000));
-        System.out.println(savingsAccount); // Prints out the toString method
+//        System.out.println(savingsAccount.withdrawLimit(3000));
+//        System.out.println(savingsAccount); // Prints out the toString method
         savingsAccount.toString();
     }
 }
+

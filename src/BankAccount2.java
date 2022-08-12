@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.ArrayList;
 public class BankAccount2 {
     String firstName;
     String lastName;
@@ -21,6 +22,7 @@ public class BankAccount2 {
     }
     public int[] accountDetails() {
         int[] accountIDs = {500,200};
+//        return accountIDs;
         return accountIDs;
     }
 
@@ -28,5 +30,8 @@ public class BankAccount2 {
         BankAccount2 capitalOneAccount = new BankAccount2("Chris", "Jin", 100000, 5);
         capitalOneAccount.checkBalance();
         capitalOneAccount.checkAccountAge();
+        System.out.println(Arrays.toString(capitalOneAccount.accountDetails()));
+        // banks array
+
     }
 }
