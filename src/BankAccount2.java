@@ -26,12 +26,12 @@ public class BankAccount2 {
         return accountIDs;
     }
 
-    public static void main(String[] args) {
-        BankAccount2 capitalOneAccount = new BankAccount2("Chris", "Jin", 100000, 5);
-        capitalOneAccount.checkBalance();
-        capitalOneAccount.checkAccountAge();
-        System.out.println(Arrays.toString(capitalOneAccount.accountDetails()));
-        // banks array
-
-    }
+//    public static void main(String[] args) {
+//        BankAccount2 capitalOneAccount = new BankAccount2("Chris", "Jin", 100000, 5);
+//        capitalOneAccount.checkBalance();
+//        capitalOneAccount.checkAccountAge();
+//        System.out.println(Arrays.toString(capitalOneAccount.accountDetails()));
+//        // banks array
+//
+//    }
 }
